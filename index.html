@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm Project</title>
+
+    <style>
+        /* TAG SELECTOR */
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        /* CLASS SELECTOR */
+        .highlight {
+            color: blue;
+        }
+
+        /* ID SELECTOR */
+        #main-header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<script>
+    // A. Variables
+    let name = "Almira Matubay";
+    let course = "BSIT";
+
+    document.write("<p>Name: " + name + "</p>");
+    document.write("<p>Course: " + course + "</p>");
+
+    // B. Button Function
+    function showAlert() {
+        alert("Button Clicked!");
+    }
+
+    // C. Display User Input
+    function displayInput() {
+        let userInput = document.getElementById("inputBox").value;
+        document.getElementById("output").innerHTML = userInput;
+    }
+
+    // D. Event Handling
+    function changeText() {
+        document.getElementById("dynamicText").innerHTML = "Text Changed!";
+    }
+</script>
+<body>
+
+<header id="main-header">
+    <h1>My Midterm Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<section>
+    <h3>JavaScript Activities</h3>
+
+<!-- Button -->
+<button onclick="showAlert()">Click Me</button>
+
+<br><br>
+
+<!-- Input -->
+<input type="text" id="inputBox" placeholder="Type something">
+<button onclick="displayInput()">Display</button>
+
+<p id="output"></p>
+
+<!-- Event -->
+<p id="dynamicText">Original Text</p>
+<button onclick="changeText()">Change Text</button>
+    <article>
+        <h2 class="highlight">Welcome</h2>
+        <p>This is my midterm project.</p>
+    </article>
+
+    <aside>
+        <p>Sidebar content here</p>
+    </aside>
+</section>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+</body>
+</html>
